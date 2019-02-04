@@ -1,0 +1,32 @@
+{
+  "name": "oop_andela",
+  "version": "1.0.0",
+  "description": "a simple oop implementation",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx babel-node --presets env index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oyekunle-Mark/tiny-smally.git"
+  },
+  "keywords": [
+    "oop",
+    "es6"
+  ],
+  "author": "oyekunle-mark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oyekunle-Mark/tiny-smally/issues"
+  },
+  "homepage": "https://github.com/Oyekunle-Mark/tiny-smally#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "babel-cli": "^6.26.0",
+    "babel-env": "^2.4.1"
+  }
+}
