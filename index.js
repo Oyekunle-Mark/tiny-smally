@@ -11,19 +11,23 @@ class Person {
 }
 
 // class sportsman extends person
+// inheritance
 
 class Sportsman extends Person {
   constructor(firstName, lastName, age, sport) {
     super(firstName, lastName, age);
     this.sport = sport;
+    this.alias = 'El Pulga'; // encapsulation
   }
 
+  // polymophism
   details() {
-    return `${super.details()} \nSport: ${this.sport}`;
+    return `${this.alias} is an amazing sportsman. \n${super.details()} \nSport: ${this.sport}`;
   }
 }
 
 // create footballer class to extend sportsman
+// inheritance
 
 class Footballer extends Sportsman {
   constructor(firstName, lastName, age, sport, position, foot) {
@@ -32,12 +36,22 @@ class Footballer extends Sportsman {
     this.foot = foot;
   }
 
-  bio() {
-    console.log(`${super.details()} \nPosition: ${this.position} \nFoot: ${this.foot}`);
+  setFoot(foot) {
+    this.foot = foot;
+  }
+
+  printdetails() {
+    console.log(`A world class footballer. \n${super.details()} \nPosition: ${this.position} \nFoot: ${this.foot}`);
   }
 }
 
 // create a footballer and get the footballer's biography
 
 const messi = new Footballer('Lionel', 'Messi', 32, 'Football', 'Forward', 'Left');
-messi.bio();
+messi.printdetails();
+
+console.log();
+console.log('Changed foot');
+
+messi.setFoot('right');
+messi.printdetails();
